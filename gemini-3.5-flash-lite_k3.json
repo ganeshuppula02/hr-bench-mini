@@ -1,0 +1,488 @@
+{
+ "label": "gemini-3.5-flash-lite",
+ "k": 3,
+ "runs": [
+  {
+   "task": "T01_headcount",
+   "passed": false,
+   "partial": 0.25,
+   "steps": 3,
+   "seconds": 44.5,
+   "detail": "Operations: got 6 want 7; People: got 2 want 3; Sales: got 6 want 8",
+   "error": null,
+   "answer": {
+    "Engineering": 10,
+    "Sales": 6,
+    "Operations": 6,
+    "People": 2
+   }
+  },
+  {
+   "task": "T01_headcount",
+   "passed": false,
+   "partial": 0.25,
+   "steps": 3,
+   "seconds": 5.7,
+   "detail": "Operations: got 5 want 7; People: got 2 want 3; Sales: got 6 want 8",
+   "error": null,
+   "answer": {
+    "Engineering": 10,
+    "Sales": 6,
+    "Operations": 5,
+    "People": 2
+   }
+  },
+  {
+   "task": "T01_headcount",
+   "passed": false,
+   "partial": 0.25,
+   "steps": 3,
+   "seconds": 2.1,
+   "detail": "Operations: got 5 want 7; People: got 2 want 3; Sales: got 6 want 8",
+   "error": null,
+   "answer": {
+    "Engineering": 10,
+    "Sales": 6,
+    "Operations": 5,
+    "People": 2
+   }
+  },
+  {
+   "task": "T02_dedupe_import",
+   "passed": false,
+   "partial": 0.75,
+   "steps": 4,
+   "seconds": 18.0,
+   "detail": "missing=['N06'] extra=[]",
+   "error": null,
+   "answer": [
+    "N02",
+    "N03",
+    "N07"
+   ]
+  },
+  {
+   "task": "T02_dedupe_import",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 5,
+   "seconds": 4.8,
+   "detail": "missing=[] extra=[]",
+   "error": null,
+   "answer": [
+    "N02",
+    "N03",
+    "N06",
+    "N07"
+   ]
+  },
+  {
+   "task": "T02_dedupe_import",
+   "passed": false,
+   "partial": 0.75,
+   "steps": 4,
+   "seconds": 32.2,
+   "detail": "missing=['N06'] extra=[]",
+   "error": null,
+   "answer": [
+    "N02",
+    "N03",
+    "N07"
+   ]
+  },
+  {
+   "task": "T03_leave_balance",
+   "passed": false,
+   "partial": 0.25,
+   "steps": 5,
+   "seconds": 81.8,
+   "detail": "E003: got 17.0 want 11.5; E006: got 4.5 want -0.5; E010: got 26.0 want 21.5",
+   "error": null,
+   "answer": {
+    "E003": 17.0,
+    "E006": 4.5,
+    "E010": 26.0,
+    "E024": 1.5
+   }
+  },
+  {
+   "task": "T03_leave_balance",
+   "passed": false,
+   "partial": 0.25,
+   "steps": 5,
+   "seconds": 6.2,
+   "detail": "E003: got 17.0 want 11.5; E006: got 4.5 want -0.5; E010: got 20.0 want 21.5",
+   "error": null,
+   "answer": {
+    "E003": 17.0,
+    "E006": 4.5,
+    "E010": 20.0,
+    "E024": 1.5
+   }
+  },
+  {
+   "task": "T03_leave_balance",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 187.2,
+   "detail": "answer is not an object",
+   "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=180)\"))",
+   "answer": null
+  },
+  {
+   "task": "T04_net_pay",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 5,
+   "seconds": 3.7,
+   "detail": "E001: got 38165 want 45693; E003: got 34913 want \u2014; E005: got 14100 want 16170; E013: got \u2014 want 72820",
+   "error": null,
+   "answer": {
+    "E001": 38165,
+    "E005": 14100,
+    "E003": 34913
+   }
+  },
+  {
+   "task": "T04_net_pay",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 6,
+   "seconds": 53.6,
+   "detail": "E001: got 39380 want 45693; E005: got 14750 want 16170; E013: got 58310 want 72820",
+   "error": null,
+   "answer": {
+    "E001": 39380,
+    "E005": 14750,
+    "E013": 58310
+   }
+  },
+  {
+   "task": "T04_net_pay",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 5,
+   "seconds": 16.3,
+   "detail": "E001: got 38160 want 45693; E005: got 14100 want 16170; E013: got 55820 want 72820",
+   "error": null,
+   "answer": {
+    "E001": 38160,
+    "E005": 14100,
+    "E013": 55820
+   }
+  },
+  {
+   "task": "T05_overtime",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 301.0,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 503 {\\n  \"error\": {\\n    \"code\": 503,\\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\\n    \"status\": \"UNAVAILABLE\"\\n  }\\n}\\n')",
+   "answer": null
+  },
+  {
+   "task": "T05_overtime",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 5,
+   "seconds": 66.5,
+   "detail": "E002: got 242 want 4858; E005: got 387 want 1330; E006: got 108 want 1790; E008: got 267 want 4006; E010: got 395 want 2966; E011: got 276 want 4134",
+   "error": null,
+   "answer": {
+    "E002": 242,
+    "E005": 387,
+    "E006": 108,
+    "E008": 267,
+    "E010": 395,
+    "E011": 276,
+    "E019": 284,
+    "E020": 48,
+    "E022": 136,
+    "E023": 332,
+    "E025": 175,
+    "E026": 384,
+    "E027": 268,
+    "E028": 187,
+    "E029": 290,
+    "E030": 338
+   }
+  },
+  {
+   "task": "T05_overtime",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 5,
+   "seconds": 16.2,
+   "detail": "E002: got 325 want 4858; E005: got 354 want 1330; E006: got 108 want 1790; E008: got 322 want 4006; E010: got 293 want 2966; E011: got 322 want 4134",
+   "error": null,
+   "answer": {
+    "E002": 325,
+    "E005": 354,
+    "E006": 108,
+    "E008": 322,
+    "E010": 293,
+    "E011": 322,
+    "E014": 182,
+    "E019": 321,
+    "E020": 94,
+    "E022": 153,
+    "E023": 236,
+    "E025": 175,
+    "E026": 384,
+    "E027": 268,
+    "E028": 186,
+    "E029": 321,
+    "E030": 359
+   }
+  },
+  {
+   "task": "T06_expense_audit",
+   "passed": false,
+   "partial": 0.304,
+   "steps": 5,
+   "seconds": 71.2,
+   "detail": "C001: got \u2014 want NO_RECEIPT; C005: got NOT_EMPLOYEE want LATE; C007: got LATE want \u2014; C009: got NOT_EMPLOYEE want LATE; C010: got NOT_EMPLOYEE want LATE; C011: got LATE want MEAL_CAP",
+   "error": null,
+   "answer": {
+    "C003": "LATE",
+    "C004": "LATE",
+    "C005": "NOT_EMPLOYEE",
+    "C006": "NO_RECEIPT",
+    "C007": "LATE",
+    "C009": "NOT_EMPLOYEE",
+    "C010": "NOT_EMPLOYEE",
+    "C011": "LATE",
+    "C013": "LATE",
+    "C015": "LATE",
+    "C017": "LATE",
+    "C018": "MEAL_CAP",
+    "C021": "NO_RECEIPT",
+    "C022": "LATE",
+    "C023": "LATE",
+    "C025": "LATE",
+    "C027": "LATE",
+    "C028": "LATE",
+    "C029": "LATE",
+    "C030": "LATE",
+    "C031": "LATE"
+   }
+  },
+  {
+   "task": "T06_expense_audit",
+   "passed": false,
+   "partial": 0.391,
+   "steps": 5,
+   "seconds": 174.6,
+   "detail": "C007: got LATE want \u2014; C011: got LATE want MEAL_CAP; C013: got LATE want \u2014; C015: got LATE want \u2014; C018: got NO_RECEIPT want MEAL_CAP; C020: got LATE want \u2014",
+   "error": null,
+   "answer": {
+    "C001": "NO_RECEIPT",
+    "C003": "LATE",
+    "C004": "LATE",
+    "C005": "LATE",
+    "C006": "NO_RECEIPT",
+    "C007": "LATE",
+    "C009": "LATE",
+    "C010": "LATE",
+    "C011": "LATE",
+    "C013": "LATE",
+    "C015": "LATE",
+    "C017": "LATE",
+    "C018": "NO_RECEIPT",
+    "C020": "LATE",
+    "C022": "LATE",
+    "C023": "LATE",
+    "C025": "LATE",
+    "C027": "LATE",
+    "C028": "LATE",
+    "C030": "LATE",
+    "C031": "NO_RECEIPT"
+   }
+  },
+  {
+   "task": "T06_expense_audit",
+   "passed": false,
+   "partial": 0.417,
+   "steps": 6,
+   "seconds": 123.4,
+   "detail": "C001: got \u2014 want NO_RECEIPT; C007: got LATE want \u2014; C011: got LATE want MEAL_CAP; C013: got LATE want \u2014; C014: got NO_RECEIPT want \u2014; C015: got LATE want \u2014",
+   "error": null,
+   "answer": {
+    "C003": "LATE",
+    "C004": "LATE",
+    "C005": "LATE",
+    "C006": "NO_RECEIPT",
+    "C007": "LATE",
+    "C009": "LATE",
+    "C010": "LATE",
+    "C011": "LATE",
+    "C013": "LATE",
+    "C014": "NO_RECEIPT",
+    "C015": "LATE",
+    "C017": "LATE",
+    "C018": "MEAL_CAP",
+    "C021": "LATE",
+    "C022": "LATE",
+    "C023": "LATE",
+    "C025": "LATE",
+    "C027": "LATE",
+    "C028": "LATE",
+    "C029": "LATE",
+    "C030": "LATE",
+    "C031": "LATE"
+   }
+  },
+  {
+   "task": "T07_leave_approvals",
+   "passed": false,
+   "partial": 0.571,
+   "steps": 5,
+   "seconds": 9.1,
+   "detail": "R03: got APPROVED want REJECTED; R04: got APPROVED want REJECTED; R07: got APPROVED want REJECTED; R10: got APPROVED want REJECTED; R11: got APPROVED want REJECTED; R12: got APPROVED want REJECTED",
+   "error": null,
+   "answer": {
+    "R01": "APPROVED",
+    "R02": "APPROVED",
+    "R03": "APPROVED",
+    "R04": "APPROVED",
+    "R05": "APPROVED",
+    "R06": "APPROVED",
+    "R07": "APPROVED",
+    "R08": "APPROVED",
+    "R09": "APPROVED",
+    "R10": "APPROVED",
+    "R11": "APPROVED",
+    "R12": "APPROVED",
+    "R13": "APPROVED",
+    "R14": "APPROVED"
+   }
+  },
+  {
+   "task": "T07_leave_approvals",
+   "passed": false,
+   "partial": 0.5,
+   "steps": 5,
+   "seconds": 141.7,
+   "detail": "R03: got APPROVED want REJECTED; R04: got APPROVED want REJECTED; R07: got APPROVED want REJECTED; R10: got APPROVED want REJECTED; R11: got APPROVED want REJECTED; R12: got APPROVED want REJECTED",
+   "error": null,
+   "answer": {
+    "R01": "APPROVED",
+    "R02": "APPROVED",
+    "R03": "APPROVED",
+    "R04": "APPROVED",
+    "R05": "APPROVED",
+    "R06": "APPROVED",
+    "R07": "APPROVED",
+    "R08": "APPROVED",
+    "R09": "APPROVED",
+    "R10": "APPROVED",
+    "R11": "APPROVED",
+    "R12": "APPROVED",
+    "R13": "APPROVED",
+    "R14": "REJECTED"
+   }
+  },
+  {
+   "task": "T07_leave_approvals",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 285.5,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  },
+  {
+   "task": "T08_final_settlement",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 542.6,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  },
+  {
+   "task": "T08_final_settlement",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 280.8,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  },
+  {
+   "task": "T08_final_settlement",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 276.5,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  },
+  {
+   "task": "T09_parental_eligibility",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 277.1,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  },
+  {
+   "task": "T09_parental_eligibility",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 465.4,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  },
+  {
+   "task": "T09_parental_eligibility",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 276.9,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  },
+  {
+   "task": "T10_total_payroll",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 276.1,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  },
+  {
+   "task": "T10_total_payroll",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 276.2,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  },
+  {
+   "task": "T10_total_payroll",
+   "passed": false,
+   "partial": 0.0,
+   "steps": 0,
+   "seconds": 276.2,
+   "detail": "answer is not an object",
+   "error": "RuntimeError('Gemini kept failing: 429 {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do')",
+   "answer": null
+  }
+ ]
+}

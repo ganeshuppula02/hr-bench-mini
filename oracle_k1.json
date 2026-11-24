@@ -1,0 +1,188 @@
+{
+ "label": "oracle",
+ "k": 1,
+ "runs": [
+  {
+   "task": "T01_headcount",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "",
+   "error": null,
+   "answer": {
+    "Engineering": 10,
+    "Sales": 8,
+    "Operations": 7,
+    "People": 3
+   }
+  },
+  {
+   "task": "T02_dedupe_import",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "missing=[] extra=[]",
+   "error": null,
+   "answer": [
+    "N02",
+    "N03",
+    "N06",
+    "N07"
+   ]
+  },
+  {
+   "task": "T03_leave_balance",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "",
+   "error": null,
+   "answer": {
+    "E003": 11.5,
+    "E006": -0.5,
+    "E010": 21.5,
+    "E024": 1.5
+   }
+  },
+  {
+   "task": "T04_net_pay",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "",
+   "error": null,
+   "answer": {
+    "E001": 45693,
+    "E005": 16170,
+    "E013": 72820
+   }
+  },
+  {
+   "task": "T05_overtime",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "",
+   "error": null,
+   "answer": {
+    "E002": 4858,
+    "E005": 1330,
+    "E006": 1790,
+    "E008": 4006,
+    "E010": 2966,
+    "E011": 4134,
+    "E019": 2557,
+    "E020": 895,
+    "E022": 511,
+    "E023": 1854,
+    "E025": 874,
+    "E026": 2506,
+    "E027": 2109,
+    "E029": 4347,
+    "E030": 5062
+   }
+  },
+  {
+   "task": "T06_expense_audit",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "",
+   "error": null,
+   "answer": {
+    "C001": "NO_RECEIPT",
+    "C003": "LATE",
+    "C004": "LATE",
+    "C005": "LATE",
+    "C006": "NO_RECEIPT",
+    "C009": "LATE",
+    "C010": "LATE",
+    "C011": "MEAL_CAP",
+    "C017": "LATE",
+    "C018": "MEAL_CAP",
+    "C022": "LATE",
+    "C024": "NOT_EMPLOYEE",
+    "C025": "MEAL_CAP",
+    "C028": "MEAL_CAP",
+    "C029": "LATE",
+    "C031": "NOT_EMPLOYEE"
+   }
+  },
+  {
+   "task": "T07_leave_approvals",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "",
+   "error": null,
+   "answer": {
+    "R02": "APPROVED",
+    "R01": "APPROVED",
+    "R05": "APPROVED",
+    "R03": "REJECTED",
+    "R04": "REJECTED",
+    "R06": "APPROVED",
+    "R07": "REJECTED",
+    "R09": "APPROVED",
+    "R10": "REJECTED",
+    "R08": "APPROVED",
+    "R11": "REJECTED",
+    "R12": "REJECTED",
+    "R13": "APPROVED",
+    "R14": "APPROVED"
+   }
+  },
+  {
+   "task": "T08_final_settlement",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "",
+   "error": null,
+   "answer": {
+    "E009": 24005,
+    "E012": 47792,
+    "E021": 94430
+   }
+  },
+  {
+   "task": "T09_parental_eligibility",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "",
+   "error": null,
+   "answer": {
+    "P01": true,
+    "P02": false,
+    "P03": true,
+    "P04": true,
+    "P05": false,
+    "P06": false,
+    "P07": true,
+    "P08": true
+   }
+  },
+  {
+   "task": "T10_total_payroll",
+   "passed": true,
+   "partial": 1.0,
+   "steps": 0,
+   "seconds": 0.0,
+   "detail": "",
+   "error": null,
+   "answer": {
+    "total_net_pay": 1681213
+   }
+  }
+ ]
+}
